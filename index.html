@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo">PersonalWebsite</a>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class='bx bx-moon' id="darkMode-icon"></div>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1 class="shivam"></h1>
+        <h3>Hello, I am</h3>
+        <h1>Shivam Arora</h1>
+        <p>I am a passionate developer with expertise in Python and web development. I have experience in both front-end and back-end technologies, and I love solving complex problems through efficient coding.</p>
+        <div class="social-media">
+            <a href="https://github.com/shivam979/Projects"><i class='bx bxl-github'></i></i></a>
+            <a href="https://linkedin.com/in/shivam-arora-32421927a"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <a href="#portfolio" class="btn">Download CV</a>
+    </div>
+    <div class="profession-container">
+        <div class="profession-box">
+            <div class="profession" style="--i:0;">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Developer</h3>
+            </div>
+            <div class="profession" style="--i:1;">
+                <i class='bx bxl-youtube'></i>
+                <h3>Youtuber</h3>
+            </div>
+            <div class="profession" style="--i:2;">
+                <i class='bx bxl-python'></i>
+                <h3>Python Developer</h3>
+            </div>
+            <div class="circle"></div>
+        </div>
+        <div class="overlay"></div>
+        <div class="home-img"></div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="imgs/1.png" alt="">
+    </div>
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Hi, I am here to help you</h3>
+        <p>I am Shivam Arora, a web developer with a background in Information Technology. I have strong technical skills in Python, JavaScript, and React, and I have worked on various projects that have honed my skills in both front-end and back-end development.</p>
+        <a href="" class="btn">Read More</a>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2 class="heading"><span>Services</span></h2>
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Front-End Developer</h3>
+            <p>I specialize in creating responsive and interactive front-end interfaces using HTML, CSS, and JavaScript. My experience includes working with React, Bootstrap, and Tailwind CSS to deliver high-quality user experiences.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bxl-python'></i>
+            <h3>Back-End Developer</h3>
+            <p>As a back-end developer, I work with Python and Node.js to build scalable and efficient server-side applications. My experience includes working with databases like MySQL and MongoDB, and frameworks like Django and Flask.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bxl-digitalocean'></i>
+            <h3>Digital Marketing</h3>
+            <p>I also have experience in digital marketing, with a certification in Google Digital Marketing. I can help enhance your online presence through strategic marketing campaigns and SEO optimization.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h1 style="text-align:center; font-size: 3rem;">Check Out My Portfolio</h1>
+    <div class="container" style="width:30%; margin:auto;">
+        <button id="viewResumeBtn" style="text-align: center;">Click this button to see my resume</button>
+    </div>
+    <div id="resumeContainer" style="display:none; margin-top: 20px;">
+        <iframe class="pdf-viewer" id="pdfViewer"></iframe>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="form-container">
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="submitbutton">Submit</button>
+        </form>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
